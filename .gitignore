@@ -1,0 +1,8 @@
+*.exe
+*.hi
+*.o
+*.out
+main
+.envrc
+.venv
+.DS_Store
