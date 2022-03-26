@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/Users/kosuke/.pyenv/versions/3.9.1/bin/python",
+    "files.associations": {
+        "ostream": "cpp"
+    }
+}
