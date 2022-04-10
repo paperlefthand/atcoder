@@ -7,3 +7,9 @@ main
 .venv
 .DS_Store
 .ipynb_checkpoints
+*.ilk
+*.pdb
+*.obj
+.pytest_cache
+__pycache__
+.mypy_cache
