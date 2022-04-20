@@ -1,6 +1,6 @@
 import pytest
 
-from prob_c import *
+from abc186.prob_c import *
 
 @pytest.mark.parametrize(('params', 'expected'), [
     ((2, [1000, 1500]), 1000.0),

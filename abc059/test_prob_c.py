@@ -1,6 +1,6 @@
 import pytest
 
-from prob_c import *
+from abc186.prob_c import *
 
 @pytest.mark.parametrize(('nums', 'expected'), [
     ([1, -3, 1, 0], 4),

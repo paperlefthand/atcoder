@@ -1,6 +1,7 @@
 import pytest
+from prob_c import gcd, lcm
 
-from prob_c import *
+from abc186.prob_c import *
 
 def test_gcd():
     assert gcd(6,8) == 2
