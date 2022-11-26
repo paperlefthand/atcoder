@@ -1,29 +1,49 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "cppbuild",
-			"label": "C/C++: cl.exe build active file",
-			"command": "cl.exe",
-			"args": [
-				"/Zi",
-				"/EHsc",
-				"/nologo",
-				"/Fe:",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe",
-				"${file}"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": [
-				"$msCompile"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"detail": "Compiler: cl.exe"
-		}
-	]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cl.exe build active file",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fe:",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build",
+            "detail": "C++ Windows: build with cl.exe"
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: clang++ build active file",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++17",
+                "-stdlib=libc++",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+            },
+            "detail": "C++ Mac: build with clang++"
+        }
+    ]
 }

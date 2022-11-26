@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "cl.exe build and debug active file",
+            "name": "C++ Windows: build and debug active file",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -16,6 +16,19 @@
             "console": "integratedTerminal",
             // "externalConsole": false,
             "preLaunchTask": "C/C++: cl.exe build active file"
+        },
+        {
+            "name": "C++ Mac: build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ build active file"
         },
         {
             "name": "Python: Current File",
