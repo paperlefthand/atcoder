@@ -1,51 +1,50 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "type": "shell",
-            "label": "C/C++ Mac: build active file",
-            "command": "/usr/bin/clang++",
-            "args": [
-                "-std=c++17",
-                "-stdlib=libc++",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.out"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-            },
-            "detail": "C++ Mac: build with clang++"
-        },
-        {
-          "type": "cppbuild",
-          "label": "C/C++ Linux: build active file",
-          "command": "/usr/bin/g++",
-          "args": [
-            "-fdiagnostics-color=always",
-            "-g",
-            "${file}",
-            "-o",
-            "${fileDirname}/${fileBasenameNoExtension}.out"
-          ],
-          "options": {
-            "cwd": "${fileDirname}"
-          },
-          "problemMatcher": [
-            "$gcc"
-          ],
-          "group": {
-            "kind": "build",
-            "isDefault": true
-          },
-          "detail": "C/C++ Linux(WSL): build with g++"
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "C/C++ Mac: build active file",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=c++17",
+        "-stdlib=libc++",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.out"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+      },
+      "detail": "C++ Mac: build with clang++"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++ Linux: build active file",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.out"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+      },
+      "detail": "C/C++ Linux(WSL): build with g++"
+    }
+  ]
 }
