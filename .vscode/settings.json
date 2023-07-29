@@ -1,4 +1,12 @@
 {
-    "python.linting.mypyEnabled": true,
-    "python.linting.enabled": true,
+"C_Cpp.clang_format_style": "{BreakBeforeBraces: Attach}",
+"files.associations": {
+    "*.embeddedhtml": "html",
+    "map": "cpp",
+    "set": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp"
+}
 }

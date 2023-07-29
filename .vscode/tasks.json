@@ -16,11 +16,9 @@
       "options": {
         "cwd": "${fileDirname}"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": ["$gcc"],
       "group": {
-        "kind": "build",
+        "kind": "build"
       },
       "detail": "C++ Mac: build with clang++"
     },
@@ -38,11 +36,9 @@
       "options": {
         "cwd": "${fileDirname}"
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": ["$gcc"],
       "group": {
-        "kind": "build",
+        "kind": "build"
       },
       "detail": "C/C++ Linux(WSL): build with g++"
     }
