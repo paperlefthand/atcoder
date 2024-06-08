@@ -1,11 +1,18 @@
-# AtCoder回答集
+# AtCoder 回答集
+
+## まとめ
+
+| name    | title  | description                  |
+| ------- | ------ | ---------------------------- |
+| ABC254C | K Swap | 移動できるもの同士で分割統治 |
 
 ## C++実行環境
 
-- [Macの設定(clang++)](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+- [Mac の設定(clang++)](https://code.visualstudio.com/docs/cpp/config-clang-mac)
 
-- [Linux(WSL)の設定(g++)](https://code.visualstudio.com/docs/cpp/config-linux)  
-  - [WSLの使い方](https://code.visualstudio.com/docs/remote/wsl)
+- [Linux(WSL)の設定(g++)](https://code.visualstudio.com/docs/cpp/config-linux)
 
-- [Windowsの設定](https://code.visualstudio.com/docs/cpp/config-msvc)  
-  terminal起動できず保留. WSL2使う.
+- [WSL の使い方](https://code.visualstudio.com/docs/remote/wsl)
+
+- [Windows の設定](https://code.visualstudio.com/docs/cpp/config-msvc)  
+  terminal 起動できず保留. WSL2 使う.
